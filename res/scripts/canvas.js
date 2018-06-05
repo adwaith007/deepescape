@@ -46,6 +46,7 @@ borderwallimg.onload= function(){
 // audio loading//
 var gunshot = new Audio("/lib/sounds/gunshot.mp3");
 var gameoversound= new Audio("/lib/sounds/gameover.mp3");
+var pain= new Audio("/lib/sounds/pain.mp3");
 
 
 ///////////////////
@@ -399,6 +400,8 @@ function drawenemies(){
 
     }
     if((mouse.x>=enemies[i].x-enemies[i].radius)&&(mouse.x<=enemies[i].x+enemies[i].radius)&&(mouse.y>=enemies[i].y-enemies[i].radius)&&(mouse.y<=enemies[i].y+enemies[i].radius)){
+      blasts.push(new Blast(enemies[i].x,enemies[i].y));
+      pain.play();
       enemies.splice(i,1);
       bonus+=5;
       i--;
