@@ -1,0 +1,49 @@
+body{
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	background: url("/lib/images/bg6.jpg");
+	font-family: Montserrat;
+
+}
+canvas{
+	background: url("/lib/images/bg5.jpg")  no-repeat;
+	background-size: 100%;
+	margin: 0;
+	height: 80%;
+	width: 80%;
+	position: absolute;
+	top:7%;
+	left: 10%;
+}
+.restart{
+	border-radius: 4px;
+	padding: 1em;
+	position: absolute;
+	top: 40%;
+	border: 2px solid red;
+	left: 33%;
+	font-size: 2em;
+	color: red;
+	cursor: pointer;
+
+}
+.fa{
+	font-size: 2em !important;
+	vertical-align: sub;
+}
+.footer{
+	box-sizing: border-box;
+	background: #232323;
+	width: 80%;
+	position: absolute;
+	left:10%;
+	top: 87%;
+	color: #ffffff;
+	padding: 0.8em;
+	text-align: center;
+}
+.hidden{
+	display: none;
+}
